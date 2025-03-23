@@ -1,13 +1,13 @@
 $(function() {
-  const d = new Date();
-  const hours = d.getHours();
-  const night = true; // between 7pm and 7am
+  const night = true;
   const body = document.querySelector('body');
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
 
-  
-  
+  if (night) {
+    input.checked = false;
+    body.classList.add('night');
+  }
 
   toggle.addEventListener('click', function() {
     const isChecked = input.checked;
@@ -17,8 +17,7 @@ $(function() {
       body.classList.add('night');
     }
   });
-  input.checked = true;
-  body.classList.add('night');
+
   const introHeight = document.querySelector('.intro').offsetHeight;
   const topButton = document.getElementById('top-button');
   const $topButton = $('#top-button');
