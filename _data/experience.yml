@@ -16,8 +16,7 @@
   time: May 2024 – Dec 2024
   position: Undergraduate Research Assistant
   description:
-    - Explored privacy-preserving techniques in graph-based machine learning, focusing on applying Local Differential Privacy to Graph Neural Networks.
-    - Conducted experiments comparing GNN models with and without LDP, analyzing trade-offs between privacy guarantees and model accuracy on benchmark datasets.
+    - Explored privacy-preserving techniques in graph-based machine learning, focusing on applying Local Differential Privacy to Graph Neural Networks.\nConducted experiments comparing GNN models with and without LDP, analyzing trade-offs between privacy guarantees and model accuracy on benchmark datasets.
 
 - company: University of Alberta
   url: https://www.ualberta.ca/
