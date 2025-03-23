@@ -6,8 +6,7 @@ $(function() {
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
 
-  input.checked = true;
-  body.classList.add('night');
+  
   
 
   toggle.addEventListener('click', function() {
@@ -18,7 +17,8 @@ $(function() {
       body.classList.add('night');
     }
   });
-
+  input.checked = true;
+  body.classList.add('night');
   const introHeight = document.querySelector('.intro').offsetHeight;
   const topButton = document.getElementById('top-button');
   const $topButton = $('#top-button');

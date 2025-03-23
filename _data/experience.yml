@@ -1,44 +1,23 @@
-- company: Upstatement
-  url: https://www.upstatement.com/
-  time: May 2018 - Present
-  position: Engineer
+- company: INVIDI Technologies
+  url: https://www.invidi.com/
+  time: May 2024 – Present
+  position: Software Developer Intern
+  description:
+    - Increased backend efficiency by developing and maintaining Kotlin & Python services, enabling seamless ad delivery and a 20% boost in campaign throughput.
+    - Deployed and managed containerized apps on AWS (EC2, IAM, S3, Lambda, Redshift) for 2400+ active client channels, delivering minimal latency and effortless scaling.
+    - Maintained and enhanced front-end dashboards in Vue.js, improving usability and workflow efficiency.
+    - Optimized consumer ad-targeting pipelines, reducing latency by 40% and enabling real-time, data-driven adjustments.
+    - Leveraged Kubernetes & Docker to ensure high availability and scalability during peak traffic loads.
+    - Automated deployments with Terraform, reducing manual configuration overhead and improving reliability.
+    - Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives).
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2018
-  position: Studio Developer
-
-- company: Apple Music
-  url: https://www.apple.com/music/
-  time: July - Dec 2017
-  position: UI Engineer Co-op
-
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2017
-  position: Studio Developer
-
-- company: Starry
-  url: https://starry.com/
-  time: July - Dec 2016
-  position: Software Engineer Co-op
-
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Jan - May 2016
-  position: HCI Teaching Assistant
-
-- company: NU Women in Tech
-  url: http://nuwit.ccs.neu.edu/
-  time: Jan 2016 - May 2017
-  position: President & Web Chair
-
-- company: MullenLowe U.S.
-  url: https://us.mullenlowe.com/
-  time: July - Dec 2015
-  position: Creative Technologist Co-op
-
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Mar - May 2015
-  position: HCI Research Assistant
+- company: TATA Consulting Engineers Limited
+  url: https://www.tce.co.in/
+  time: May 2023 – Aug 2023
+  position: Software Developer Intern
+  description:
+    - Achieved faster model convergence by performing custom feature analysis on an inventory stock management ML model.
+    - Implemented ARIMA & SARIMA models for more accurate time-series demand forecasts, reducing stockouts by 15%.
+    - Migrated existing asset repositories to a React.js-based platform for more centralized software and applications.
+    - Built a desktop dashboard for real-time inventory insights, improving accuracy in warehouse replenishment decisions.
+    - Created ER & UML diagrams plus FRS & FDS documentation for clear technical requirements and faster development cycles.
