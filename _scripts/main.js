@@ -8,7 +8,6 @@ $(function() {
     input.checked = false;
     body.classList.add('night');
   }
-
   toggle.addEventListener('click', function() {
     const isChecked = input.checked;
     if (isChecked) {
@@ -41,6 +40,7 @@ $(function() {
   const hand = document.querySelector('.emoji.wave-hand');
 
   function waveOnLoad() {
+    body.classList.add('night');
     hand.classList.add('wave');
     setTimeout(function() {
       hand.classList.remove('wave');
