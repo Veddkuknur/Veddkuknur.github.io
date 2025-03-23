@@ -1,6 +1,7 @@
 - name: MediCheck
   url: https://github.com/A-D-I-T-C/medicheck
   description: AI-powered web platform to streamline patient-clinician interactions. Patients manage health records, fill forms, and interact via a voice-enabled chatbot, while clinicians access session data and documents in one place. Uses large language models and speech-to-text for transcription, Q&A, and ensures secure, HIPAA-compliant data handling.
+   <a class="small" href="">🏆 Won 3rd in HackEd hackathon 🏆</a>
   used:
     - thing: Next.js
     - thing: React
