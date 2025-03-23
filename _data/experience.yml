@@ -26,7 +26,15 @@
   description:
     - Assisted the lead instructor of CMPUT 267 (Basics of Machine Learning) by conducting lectures, workshops, and lab sessions.
     - Guided students on foundational machine-learning concepts and assignments, ensuring a deeper understanding of course material.
-
+- company: SPL (Single Parent Life)
+  time: Sep 2023 – Dec 2023
+  position: Mobile App Developer
+  description:
+    - Developed and launched a cross-platform mobile app (iOS/Android) to connect single parents with shared interests, mitigating isolation and fostering community.
+    - Implemented account authentication, media storage, and real-time messaging using Firebase.
+    - Built the frontend and core business logic in Flutter, compiling to native code for seamless iOS and Android experiences.
+    - Integrated Maps API for event geolocation and location-based user matching, promoting in-person gatherings.
+    - Leveraged Firebase Realtime Database for efficient data storage and retrieval, ensuring scalable user interactions.
 - company: TATA Consulting Engineers Limited
   url: https://www.tce.co.in/
   time: May 2023 – Aug 2023
