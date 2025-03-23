@@ -1,5 +1,5 @@
 - name: MediCheck
-  code: https://github.com/A-D-I-T-C/medicheck
+  url: https://github.com/A-D-I-T-C/medicheck
   description: AI-powered web platform to streamline patient-clinician interactions. Patients manage health records, fill forms, and interact via a voice-enabled chatbot, while clinicians access session data and documents in one place. Uses large language models and speech-to-text for transcription, Q&A, and ensures secure, HIPAA-compliant data handling.
   used:
     - thing: Next.js
@@ -10,8 +10,8 @@
     - thing: PostgreSQL
 
 - name: Gazprea Compiler
-  code: https://github.com/Veddkuknur/Gazprea-Compiler
-  description: Custom compiler for the Gazprea domain-specific language (DSL) built in C++ with LLVM and MLIR. Incorporates a parser (ANTLR), semantic analysis, and optimized code generation (including advanced matrix operations), showcasing a high-performance compiler design.
+  url: https://github.com/Veddkuknur/Gazprea-Compiler
+  description: Custom compiler for the Gazprea domain-specific language (DSL) built in C++ with LLVM and MLIR. Incorporates a parser (ANTLR), semantic analysis, and optimized url generation (including advanced matrix operations), showcasing a high-performance compiler design.
   used:
     - thing: C++
     - thing: LLVM
@@ -19,7 +19,7 @@
     - thing: ANTLR
 
 - name: Social Distribution
-  code: https://github.com/Veddkuknur/Social-Distribution
+  url: https://github.com/Veddkuknur/Social-Distribution
   description: Distributed social networking platform built with Django that enables a federated social media experience. Implements RESTful APIs for inter-node communication using an inbox model to share posts across servers, allowing users on different nodes to follow and interact with each other. Demonstrates a decentralized social network architecture with data stored in PostgreSQL.
   used:
     - thing: Python
@@ -28,7 +28,7 @@
     - thing: PostgreSQL
 
 - name: Custom GAN Image Generator
-  code: https://github.com/Veddkuknur/custom_GAN
+  url: https://github.com/Veddkuknur/custom_GAN
   description: Deep learning project implementing a custom Generative Adversarial Network for multi-class image generation. Trains a custom generator and discriminator (with a 32x32 output) from scratch, instead of using a standard DCGAN architecture, to produce realistic small images and explore GAN training techniques.
   used:
     - thing: Python
@@ -36,7 +36,7 @@
     - thing: GAN
 
 - name: Custom YOLOv5 Object Detector
-  code: https://github.com/Veddkuknur/custom_YOLOv5
+  url: https://github.com/Veddkuknur/custom_YOLOv5
   description: Computer vision project reimplementing the YOLOv5 object detection model. Involves building a YOLOv5-like neural network to detect multiple objects in images and training it on example data, providing hands-on experience with the YOLO architecture and object detection pipeline.
   used:
     - thing: Python
@@ -45,7 +45,7 @@
     - thing: Computer Vision
 
 - name: Carbon Footprint Calculator (Android)
-  code: https://github.com/Veddkuknur/Caronfootprint-calculatorApp
+  url: https://github.com/Veddkuknur/Caronfootprint-calculatorApp
   description: Mobile app that estimates a user's carbon footprint based on their daily activities and resource usage. Built for Android in Java, it allows users to input data (like travel, energy consumption, etc.) and calculates corresponding carbon emissions to promote awareness of environmental impact.
   used:
     - thing: Java

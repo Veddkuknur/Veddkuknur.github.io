@@ -1,4 +1,4 @@
-Languages:
+languages:
   - item: Kotlin
   - item: Python
   - item: C++
@@ -10,7 +10,7 @@ Languages:
   - item: Julia
   - item: ARM
 
-Frameworks:
+frameworks:
   - item: Vue.js
   - item: React
   - item: Node.js
@@ -22,7 +22,7 @@ Frameworks:
   - item: MERN
   - item: MATLAB
 
-Tools:
+tools:
   - item: AWS (EC2, IAM, S3, Lambda, Redshift)
   - item: Docker
   - item: Kubernetes
@@ -30,7 +30,7 @@ Tools:
   - item: Git & GitHub
   - item: Pandas
 
-Methodologies:
+methodologies:
   - Agile
   - Extreme Programming
   - Kanban
