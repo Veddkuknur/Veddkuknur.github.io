@@ -40,7 +40,6 @@ $(function() {
   const hand = document.querySelector('.emoji.wave-hand');
 
   function waveOnLoad() {
-    body.classList.add('night');
     hand.classList.add('wave');
     setTimeout(function() {
       hand.classList.remove('wave');
