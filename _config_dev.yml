@@ -1,26 +1,26 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
+name: Vedd Kuknur
+title: Vedd Kuknur | Front End Software Engineer
 description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+url: https://VeddKuknur.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+email: ved.kuknur@gmail.com
+cover: https://VeddKuknur.github.io/img/og.png
+logo: https://VeddKuknur.github.io/img/emojis/technologist.png
+resume: https://VeddKuknur.github.io/resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
+    url: mailto:ved.kuknur@gmail.com
   - title: twitter
-    url: https://twitter.com/bchiang7
+    url: https://twitter.com/VeddKuknur
   - title: instagram
-    url: https://instagram.com/bchiang7
+    url: https://instagram.com/VeddKuknur
   - title: codepen
-    url: http://codepen.io/bchiang7
+    url: http://codepen.io/VeddKuknur
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/VeddKuknur
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/VeddKuknur
 
 # Build settings
 markdown: kramdown
