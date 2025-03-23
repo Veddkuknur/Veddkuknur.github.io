@@ -11,6 +11,22 @@
     - Automated deployments with Terraform, reducing manual configuration overhead and improving reliability.
     - Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives).
 
+- company: University of Alberta
+  url: https://www.ualberta.ca/
+  time: May 2024 – Dec 2024
+  position: Undergraduate Research Assistant
+  description:
+    - Explored privacy-preserving techniques in graph-based machine learning, focusing on applying Local Differential Privacy to Graph Neural Networks.
+    - Conducted experiments comparing GNN models with and without LDP, analyzing trade-offs between privacy guarantees and model accuracy on benchmark datasets.
+
+- company: University of Alberta
+  url: https://www.ualberta.ca/
+  time: Jan 2024 – Apr 2024
+  position: Teaching Assistant
+  description:
+    - Assisted the lead instructor of CMPUT 267 (Basics of Machine Learning) by conducting lectures, workshops, and lab sessions.
+    - Guided students on foundational machine-learning concepts and assignments, ensuring a deeper understanding of course material.
+
 - company: TATA Consulting Engineers Limited
   url: https://www.tce.co.in/
   time: May 2023 – Aug 2023
@@ -21,3 +37,4 @@
     - Migrated existing asset repositories to a React.js-based platform for more centralized software and applications.
     - Built a desktop dashboard for real-time inventory insights, improving accuracy in warehouse replenishment decisions.
     - Created ER & UML diagrams plus FRS & FDS documentation for clear technical requirements and faster development cycles.
+
