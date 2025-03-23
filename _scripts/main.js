@@ -65,7 +65,6 @@ $(function() {
     scale: 1,
     viewFactor: 0.3,
   });
-  body.classList.remove('night');
   sr.reveal('.background');
   sr.reveal('.skills');
   sr.reveal('.experience', { viewFactor: 0.2 });
