@@ -1,17 +1,16 @@
-languages:
+Languages:
   - item: Kotlin
   - item: Python
-  - item: Go
+  - item: C++
+  - item: C
   - item: SQL
   - item: Dart
   - item: Java
   - item: JavaScript
   - item: Julia
-  - item: C++
-  - item: C
   - item: ARM
 
-frameworks:
+Frameworks:
   - item: Vue.js
   - item: React
   - item: Node.js
@@ -23,10 +22,17 @@ frameworks:
   - item: MERN
   - item: MATLAB
 
-tools:
+Tools:
   - item: AWS (EC2, IAM, S3, Lambda, Redshift)
   - item: Docker
   - item: Kubernetes
   - item: Terraform
   - item: Git & GitHub
   - item: Pandas
+
+Methodologies:
+  - Agile
+  - Extreme Programming
+  - Kanban
+  - Scrum
+  - Waterfall
