@@ -11,9 +11,11 @@
           <div class="job__time">{{job.time}}</div>
         </div>
         <div class="job__position">{{job.position}}</div>
+        <ul>
         {% for item in job.description%}
-        <p>{{item.thing}}</p>
+        <li>{{item.thing}}</li>
         {% endfor %}
+      </ul>  
       </div>
       {% endfor %}
     </div>
