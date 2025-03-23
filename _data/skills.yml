@@ -31,8 +31,8 @@ tools:
   - item: Pandas
 
 methodologies:
-  - Agile
-  - Extreme Programming
-  - Kanban
-  - Scrum
-  - Waterfall
+  - item: Agile
+  - item: Extreme Programming
+  - item: Kanban
+  - item: Scrum
+  - item: Waterfall

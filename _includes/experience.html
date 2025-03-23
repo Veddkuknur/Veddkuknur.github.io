@@ -10,8 +10,10 @@
           </div>
           <div class="job__time">{{job.time}}</div>
         </div>
-        <div class="job__position">{{job.position}}</div>
+        <div class="job__company">{{job.position}}</div>
+        {% for job_des in site.data.experience.description %}
         <div class="job__position">{{job.description}}</div>
+        {% endfor %}
       </div>
       {% endfor %}
     </div>
