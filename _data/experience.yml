@@ -3,21 +3,21 @@
   time: May 2024 – Present
   position: Software Developer Intern
   description:
-    - thing: thing: Increased backend efficiency by developing and maintaining Kotlin & Python services, enabling seamless ad delivery and a 20% boost in campaign throughput.
-    - thing: thing: Deployed and managed containerized apps on AWS (EC2, IAM, S3, Lambda, Redshift) for 2400+ active client channels, delivering minimal latency and effortless scaling.
-    - thing: thing: Maintained and enhanced front-end dashboards in Vue.js, improving usability and workflow efficiency.
-    - thing: thing: Optimized consumer ad-targeting pipelines, reducing latency by 40% and enabling real-time, data-driven adjustments.
-    - thing: thing: Leveraged Kubernetes & Docker to ensure high availability and scalability during peak traffic loads.
-    - thing: thing: Automated deployments with Terraform, reducing manual configuration overhead and improving reliability.
-    - thing: thing: Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives).
+    - thing: Increased backend efficiency by developing and maintaining Kotlin & Python services, enabling seamless ad delivery and a 20% boost in campaign throughput.
+    - thing: Deployed and managed containerized apps on AWS (EC2, IAM, S3, Lambda, Redshift) for 2400+ active client channels, delivering minimal latency and effortless scaling.
+    - thing: Maintained and enhanced front-end dashboards in Vue.js, improving usability and workflow efficiency.
+    - thing: Optimized consumer ad-targeting pipelines, reducing latency by 40% and enabling real-time, data-driven adjustments.
+    - thing: Leveraged Kubernetes & Docker to ensure high availability and scalability during peak traffic loads.
+    - thing: Automated deployments with Terraform, reducing manual configuration overhead and improving reliability.
+    - thing: Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives).
 
 - company: University of Alberta
   url: https://www.ualberta.ca/
   time: May 2024 – Dec 2024
   position: Undergraduate Research Assistant
   description:
-    - thing: thing: Explored privacy-preserving techniques in graph-based machine learning, focusing on applying Local Differential Privacy to Graph Neural Networks.
-    - thing: thing: Conducted experiments comparing GNN models with and without LDP, analyzing trade-offs between privacy guarantees and model accuracy on benchmark datasets.
+    - thing: Explored privacy-preserving techniques in graph-based machine learning, focusing on applying Local Differential Privacy to Graph Neural Networks.
+    - thing: Conducted experiments comparing GNN models with and without LDP, analyzing trade-offs between privacy guarantees and model accuracy on benchmark datasets.
 
 - company: University of Alberta
   url: https://www.ualberta.ca/
