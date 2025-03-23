@@ -1,6 +1,6 @@
 # Site settings
 name: Vedd Kuknur
-title: Vedd Kuknur | Front End Software Engineer
+title: Vedd Kuknur - Portfolio
 description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
 url: https://VeddKuknur.github.io/
 baseurl: ''
@@ -11,12 +11,8 @@ resume: https://VeddKuknur.github.io/resume.pdf
 social:
   - title: email
     url: mailto:ved.kuknur@gmail.com
-  - title: twitter
-    url: https://twitter.com/VeddKuknur
   - title: instagram
     url: https://instagram.com/VeddKuknur
-  - title: codepen
-    url: http://codepen.io/VeddKuknur
   - title: github
     url: https://github.com/VeddKuknur
   - title: linkedin

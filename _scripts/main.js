@@ -6,10 +6,9 @@ $(function() {
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
 
-  if (night) {
-    input.checked = true;
-    body.classList.add('night');
-  }
+  input.checked = true;
+  body.classList.add('night');
+  
 
   toggle.addEventListener('click', function() {
     const isChecked = input.checked;
