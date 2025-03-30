@@ -28,7 +28,7 @@ tools:
   - item: Docker
   - item: Kubernetes
   - item: Terraform
-  - item: Git & GitHub
+  - item: Git
   - item: Pandas
 
 methodologies:
