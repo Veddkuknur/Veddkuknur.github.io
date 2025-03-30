@@ -4,6 +4,7 @@ languages:
   - item: C++
   - item: C
   - item: SQL
+  - item: MongoDB
   - item: Dart
   - item: Java
   - item: JavaScript
@@ -12,7 +13,7 @@ languages:
 
 frameworks:
   - item: Vue.js
-  - item: React
+  - item: React.js
   - item: Node.js
   - item: Django
   - item: Flutter
