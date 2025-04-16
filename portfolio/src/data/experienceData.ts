@@ -11,7 +11,7 @@ export const experienceData = [
         "Optimized consumer ad-targeting pipelines, reducing latency by 40% and enabling real-time, data-driven adjustments.",
         "Leveraged Kubernetes & Docker to ensure high availability and scalability during peak traffic loads.",
         "Automated deployments with Terraform, reducing manual configuration overhead and improving reliability.",
-        "Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives)."
+        "Contributed to Kanban & SCRUM responsibilities (sprint planning, daily stand-ups, retrospectives)." 
       ]
     },
     {
