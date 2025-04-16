@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectSection from "../components/ProjectSection";
 import projectData from "../data/projectsData";
 type Project = {
   name: string;
