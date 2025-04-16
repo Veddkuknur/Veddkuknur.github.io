@@ -3,51 +3,38 @@ import "./App.css";
 import GridHeader from "./components/GridHeader";
 import SlideAnimation from "./components/SlideAnimation";
 import ProjectsPage from "./pages/ProjectsPage";
-import ThirdPage from "./pages/ThirdPage";
 import WorkEx from "./pages/WorkExperiencePage";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const [currentPath, setCurrentPath] = useState(getPath());
+  const [currentPath, setCurrentPath] = useState(() => window.location.hash || "#");
 
   useEffect(() => {
     const handlePathChange = () => {
-      setCurrentPath(getPath());
+      setCurrentPath(window.location.hash || "#");
     };
 
-    window.addEventListener("popstate", handlePathChange);
-
+    window.addEventListener("hashchange", handlePathChange);
     return () => {
-      window.removeEventListener("popstate", handlePathChange);
+      window.removeEventListener("hashchange", handlePathChange);
     };
   }, []);
 
-  function getPath() {
-    return window.location.hash || "#demoProd"; // fallback if hash is missing
-  }
-
-  const isValidPath = (path: string) => {
-    const validPaths = ["#demoProd", "#workexperience", "#projects", "#extracurriculars"];
-    return validPaths.includes(path);
+  const pageMap: Record<string, React.ReactNode> = {
+    "#": (
+      <>
+        <SlideAnimation />
+        <WorkEx />
+        <ProjectsPage />
+        <GridHeader />
+      </>
+    ),
+    "#workexperience": <WorkEx />,
+    "#projects": <ProjectsPage />,
+    // "#extracurriculars": <ThirdPage />
   };
 
-  const renderPage = () => {
-    if (isValidPath(currentPath)) {
-      return (
-        <>
-          <SlideAnimation />
-          <WorkEx/>
-          <ProjectsPage />
-          {/* <ThirdPage /> */}
-          <GridHeader />
-        </>
-      );
-    } else {
-      return <NoPage />;
-    }
-  };
-
-  return <div className="App">{renderPage()}</div>;
+  return <div className="App">{pageMap[currentPath] || <NoPage />}</div>;
 }
 
 export default App;
