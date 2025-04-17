@@ -17,7 +17,7 @@ const IconMenu: React.FC = () => {
         <a href="mailto:ved.kuknur@gmail.com">
           <img src={email} className="emaillogo glow-on-hover" alt="emaillogo" />
         </a>
-        <a href="https://veddkuknur.github.io/resume.pdf" target="_blank" rel="noreferrer">
+        <a href="resume.pdf" target="_blank" rel="noreferrer">
           <img src={cv} className="cvlogo glow-on-hover" alt="cvlogo" />
         </a>
       </div>
