@@ -315,11 +315,9 @@ code {
   background: rgb(9, 9, 9);
   height: 300vh;
   background-position: 0% 700%;
-  grid-template-columns:auto ;
+  grid-template-columns: 0.2fr 5fr 0.2fr;
   grid-template-rows: auto;
   border-bottom: 1px solid #3b3b3b;
-  padding-left: 4rem; 
-  padding-right: 4rem;
 }
 
 .work-header {
