@@ -44,6 +44,17 @@ const projectData = [
       "Allows users on different nodes to follow and interact with each other.",
     ],
     techStack: ["Python", "Django", "REST API", "PostgreSQL"],
+  },{
+    name: "QR-GO Mobile Game",
+    url: "http://github.com/CMPUT301W23T25/QR-Go-Gotta-Scan-Em-All",
+    description:
+      "Android-based mobile game that incentivizes social interaction and physical activity by enabling users to scan and collect QR codes across real-world locations.",
+    points: [
+      "Engineered an Android application that incentivizes social interaction and physical exercise through gamification, leveraging QR code collection as a core gameplay mechanic.",
+      "Gained expertise in utilizing the Google Maps API and implemented maps functionality to show scanned QR code locations.",
+      "Optimized load times and reduced crashes by 60% using threading and asynchronous programming in Java.",
+    ],
+    techStack: ["Java", "Android Studio", "Gradle", "GCP", "Google Maps SDK", "Firebase"],
   },
   {
     name: "Custom GAN Image Generator",
