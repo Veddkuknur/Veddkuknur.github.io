@@ -1141,6 +1141,7 @@ code {
   border: 0.5px solid rgb(50, 90, 180); /* bluish border */
   padding: 1.5rem 1.5rem 2rem 1.5rem;
   margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   box-sizing: border-box;
   grid-column: 2;
   height: 100%;
