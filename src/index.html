@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedd Kuknur | Software Developer</title>
+    <meta name="description" content="Professional portfolio of Vedd Kuknur - Software Developer specializing in scalable systems and machine learning">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>VK</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #2dd4bf;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active-nav::after {
+            width: 100%;
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #2dd4bf;
+            border: 3px solid #0f766e;
+        }
+        .typewriter {
+            border-right: 2px solid #2dd4bf;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #2dd4bf }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">VK</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link active-nav text-primary-400 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link text-slate-300 hover:text-primary-400 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#experience" class="nav-link text-slate-300 hover:text-primary-400 px-3 py-2 text-sm font-medium">Experience</a>
+                        <a href="#projects" class="nav-link text-slate-300 hover:text-primary-400 px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="#resume" class="nav-link text-slate-300 hover:text-primary-400 px-3 py-2 text-sm font-medium">Resume</a>
+                        <a href="#contact" class="nav-link text-slate-300 hover:text-primary-400 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">Vedd Kuknur</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">I'm a <span id="typewriter" class="text-primary-400"></span></h2>
+                    <p class="text-lg text-slate-300 mb-8 max-w-lg">I build scalable systems, machine learning models, and impactful applications that solve real-world problems.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition duration-300 shadow-lg hover:shadow-primary-500/30">View My Work</a>
+                        <a href="#resume" class="px-6 py-3 border border-primary-400 text-primary-400 hover:bg-slate-800 font-medium rounded-md transition duration-300">Download Resume</a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-500 shadow-xl">
+                            <img src="http://static.photos/technology/640x360/42" alt="Vedd Kuknur" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-slate-800 p-3 rounded-full shadow-lg">
+                            <div class="w-14 h-14 bg-primary-500 rounded-full flex items-center justify-center">
+                                <i data-feather="code" class="text-white w-6 h-6"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-6">Who I Am</h3>
+                    <p class="text-slate-300 mb-6">I'm a passionate software developer with expertise in building high-performance applications and machine learning solutions. Currently working as a Senior Software Engineer at Tech Innovations Inc., where I lead a team developing next-generation AI platforms.</p>
+                    <p class="text-slate-300 mb-8">When I'm not coding, you can find me contributing to open-source projects, reading about quantum computing, or hiking in the mountains. I believe in continuous learning and sharing knowledge with the community.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-300 hover:text-primary-400 transition duration-300">
+                            <i data-feather="github" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-primary-400 transition duration-300">
+                            <i data-feather="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-primary-400 transition duration-300">
+                            <i data-feather="twitter" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-6">My Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">TypeScript</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">React</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">TensorFlow</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">PyTorch</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">Docker</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">Kubernetes</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">AWS</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">GraphQL</span>
+                        <span class="skill-badge px-4 py-2 bg-slate-700 rounded-full text-sm font-medium">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4">My Experience</h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="relative max-w-3xl mx-auto">
+                <div class="absolute left-8 md:left-1/2 h-full border border-slate-700"></div>
+                
+                <div class="mb-12 relative pl-16" data-aos="fade-right">
+                    <div class="timeline-item bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary-400">Senior Software Engineer</h3>
+                            <span class="text-sm text-slate-400">2021 - Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3">Tech Innovations Inc.</h4>
+                        <p class="text-slate-300 mb-4">Leading a team of 5 developers to build AI-powered enterprise solutions.</p>
+                        <ul class="list-disc pl-5 text-slate-400 space-y-2">
+                            <li>Reduced pipeline latency to &lt;100ms for 2.4K ad-delivery channels</li>
+                            <li>Implemented a distributed training system that reduced model training time by 40%</li>
+                            <li>Designed and deployed a real-time recommendation engine serving 5M+ users</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mb-12 relative pl-16" data-aos="fade-left">
+                    <div class="timeline-item bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary-400">Software Engineer</h3>
+                            <span class="text-sm text-slate-400">2018 - 2021</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3">DataSystems Corp</h4>
+                        <p class="text-slate-300 mb-4">Developed backend services and machine learning pipelines for data processing.</p>
+                        <ul class="list-disc pl-5 text-slate-400 space-y-2">
+                            <li>Built a fraud detection system with 98.7% accuracy saving $2M annually</li>
+                            <li>Optimized database queries reducing API response times by 65%</li>
+                            <li>Created an automated testing framework that reduced QA time by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mb-12 relative pl-16" data-aos="fade-right">
+                    <div class="timeline-item bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary-400">Junior Developer</h3>
+                            <span class="text-sm text-slate-400">2016 - 2018</span>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-3">WebStart Solutions</h4>
+                        <p class="text-slate-300 mb-4">Built and maintained web applications for small businesses and startups.</p>
+                        <ul class="list-disc pl-5 text-slate-400 space-y-2">
+                            <li>Developed 15+ client websites with custom CMS solutions</li>
+                            <li>Implemented CI/CD pipelines reducing deployment time by 80%</li>
+                            <li>Created an internal tool that automated reporting saving 20 hours/week</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-800 rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/101" alt="MediCheck Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">MediCheck</h3>
+                        <p class="text-slate-300 mb-4">AI-powered medical diagnosis assistant with 95% accuracy in preliminary assessments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">Python</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">TensorFlow</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">React</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">Flask</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-800 rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/102" alt="Gazprea Compiler" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gazprea Compiler</h3>
+                        <p class="text-slate-300 mb-4">Advanced compiler for the Gazprea programming language with LLVM backend.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">C++</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">LLVM</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">ANTLR</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-slate-800 rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/103" alt="GAN Image Generator" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">GAN Image Generator</h3>
+                        <p class="text-slate-300 mb-4">Generative Adversarial Network that creates realistic artwork from sketches.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">Python</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">PyTorch</span>
+                            <span class="text-xs px-2 py-1 bg-slate-700 rounded-full">GANs</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 flex items-center text-sm">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4">My Resume</h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto bg-slate-800 rounded-xl shadow-2xl p-8" data-aos="zoom-in">
+                <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Vedd Kuknur</h3>
+                        <p class="text-slate-300">Senior Software Engineer</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <a href="#" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition duration-300 shadow-lg hover:shadow-primary-500/30">
+                            <i data-feather="download" class="w-5 h-5 mr-2"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-slate-700 pt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4 text-primary-400">Contact</h4>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex items-center">
+                                    <i data-feather="mail" class="w-4 h-4 mr-2"></i> vedd@example.com
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="phone" class="w-4 h-4 mr-2"></i> (123) 456-7890
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-feather="map-pin" class="w-4 h-4 mr-2"></i> San Francisco, CA
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4 text-primary-400">Education</h4>
+                            <ul class="space-y-3 text-slate-300">
+                                <li>
+                                    <h5 class="font-medium">M.S. Computer Science</h5>
+                                    <p class="text-sm">Stanford University, 2016</p>
+                                </li>
+                                <li>
+                                    <h5 class="font-medium">B.S. Software Engineering</h5>
+                                    <p class="text-sm">MIT, 2014</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4 text-primary-400">Skills</h4>
+                            <ul class="space-y-2 text-slate-300">
+                                <li>Machine Learning</li>
+                                <li>Cloud Architecture</li>
+                                <li>Distributed Systems</li>
+                                <li>Full-Stack Development</li>
+                                <li>DevOps & CI/CD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <p class="text-slate-300 mb-8">Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-5 h-5 mr-4 mt-1 text-primary-400"></i>
+                            <span>vedd@example.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="w-5 h-5 mr-4 mt-1 text-primary-400"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-4 mt-1 text-primary-400"></i>
+                            <span>San Francisco, California</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-slate-300 hover:bg-primary-600 hover:text-white transition duration-300">
+                                <i data-feather="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-slate-300 hover:bg-primary-600 hover:text-white transition duration-300">
+                                <i data-feather="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-slate-300 hover:bg-primary-600 hover:text-white transition duration-300">
+                                <i data-feather="twitter" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-white placeholder-slate-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-white placeholder-slate-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-white placeholder-slate-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition duration-300 shadow-lg hover:shadow-primary-500/30 flex items-center justify-center">
+                            <i data-feather="send" class="w-5 h-5 mr-2"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent mr-2">VK</span>
+                    <span class="text-slate-300">Vedd Kuknur</span>
+                </div>
+                <div class="text-slate-400 text-sm">
+                    &copy; 2023 Vedd Kuknur. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Typewriter Effect
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typewriter', {
+                strings: ['Software Developer', 'ML Engineer', 'Problem Solver', 'Tech Enthusiast'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true
+            });
+
+            // Scroll spy for navigation
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - 300)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-nav', 'text-primary-400');
+                    link.classList.add('text-slate-300');
+                    
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active-nav', 'text-primary-400');
+                        link.classList.remove('text-slate-300');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
