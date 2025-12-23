@@ -1,55 +1,49 @@
 {
-  "homepage": "https://veddkuknur.github.io",
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "veddkuknur.github.io",
+  "version": "2.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.10",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.82",
-    "@types/react": "^18.2.57",
-    "@types/react-dom": "^18.2.19",
-    "hamburger-react": "^2.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "5.0.1",
-    "styled-components": "^6.1.8",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap.js",
+    "build": "next build && cp CNAME out/ && cp out/404/index.html out/404.html",
+    "start": "next start",
+    "lint": "next lint",
+    "sitemap": "node scripts/generate-sitemap.js",
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out -t true"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/postprocessing": "^2.19.1",
+    "@tailwindcss/typography": "^0.5.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.554.0",
+    "marked": "^17.0.1",
+    "next": "^14.2.0",
+    "postprocessing": "^6.38.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-syntax-highlighter": "^16.1.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-rehype": "^11.1.2",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }

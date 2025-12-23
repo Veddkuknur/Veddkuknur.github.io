@@ -11,6 +11,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -19,20 +20,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then npm ci; else npm install; fi
-
+        run: npm ci
+        
       - name: Build site
         run: npm run build
-
-      - name: Add 404.html for SPA routing
-        run: cp build/index.html build/404.html
-
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+      
